@@ -1,0 +1,96 @@
+.ser-card {
+  color: white;
+  border-radius: 40px;
+  height: 250px;
+  background-color: transparent;
+  border: 1px solid #4b4f5f;
+  margin: 1rem;
+  padding: 15px;
+  direction: rtl;
+  /* text-align: center; */
+}
+.ser-card h3 {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  margin-top: 2rem;
+}
+.ser-card p {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: right;
+  margin: 20px 0;
+  opacity: 0.5;
+}
+.card-icon {
+  color: #f2f2f2;
+  margin-left: 5px;
+  /* margin-top: 10px; */
+}
+.ser-card button {
+  margin-right: 0.4rem;
+}
+
+.fa-check {
+  margin-left: 5px;
+}
+
+.selected {
+  border: 1px solid #ad0288;
+}
+
+.btn-card {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 10px;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid gray;
+  color: white;
+}
+.hvr-bounce-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(94.97deg, #ff0000 -130.13%, #c750ff 129.4%);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-left:hover,
+.hvr-bounce-to-left:active {
+  color: white;
+}
+.hvr-bounce-to-left:hover:before,
+.hvr-bounce-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}

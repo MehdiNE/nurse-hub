@@ -1,0 +1,177 @@
+.services {
+  padding-bottom: 1px;
+  width: 100%;
+  background: linear-gradient(106.57deg, #373d53 0%, #252634 100%) !important;
+}
+p {
+  margin-bottom: 0;
+}
+
+.sideContainer {
+  width: 92vw;
+  border-radius: 30px;
+  color: white;
+  direction: rtl;
+  padding: 25px;
+  text-align: justify;
+}
+.sideContainer h2 {
+  margin-bottom: 25px;
+}
+
+.horizontal-line {
+  position: relative;
+  /* width: 170px; */
+  height: 0.7px;
+  background-color: #565b6b;
+  left: 5%;
+  margin-left: -20px;
+}
+.bg-input-color {
+  background-color: #5d6174;
+  color: white;
+}
+.h2-line-container {
+  display: flex;
+  height: 20px;
+  justify-content: flex-end;
+  margin-right: 7%;
+  margin-top: 2%;
+  color: white;
+}
+.h2-line {
+  position: relative;
+  margin-left: 20px;
+}
+.horizontal-line2 {
+  position: relative;
+  margin-top: 20px;
+  width: 70%;
+  height: 1px;
+  background-color: #565b6b;
+  /* left: 5%; */
+  /* margin-left: -20px; */
+}
+.footer {
+  color: white;
+  text-align: center;
+  opacity: 0.2;
+  font-size: 14px;
+  margin-bottom: -2rem;
+}
+
+@media only screen and (min-width: 0px) {
+  .cards {
+    margin: 0 auto;
+  }
+  .sideContainer {
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    margin-top: 1rem;
+  }
+  .h2-line {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+
+  .horizontal-line2 {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+  .h2-line {
+    font-size: 16px;
+  }
+
+  .horizontal-line2 {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .h2-line-container {
+    margin-left: 5%;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .h2-line {
+    font-size: 20px;
+  }
+
+  .horizontal-line2 {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+  .sideContainer {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .cards {
+    margin: 0 auto;
+  }
+
+  .float {
+    display: flex;
+    margin-top: 7rem;
+    padding-bottom: 7%;
+  }
+  .sideContainer {
+    width: 30%;
+    margin-right: 4%;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+  .footer {
+    margin-bottom: 100px;
+  }
+  .h2-line {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .horizontal-line2 {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .footer {
+    margin-bottom: 100px;
+  }
+  .float {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .float {
+    margin-left: 7%;
+  }
+  .sideContainer {
+    margin-right: 7%;
+  }
+  .horizontal-line2 {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
