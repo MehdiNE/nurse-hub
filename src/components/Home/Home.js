@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import classes from "./Home.module.css";
-import Nurse from "./Nurse.svg";
+import Nurse from "../../Assets/Nurse.svg";
 import { Link } from "react-router-dom";
 
 const Home = () => {

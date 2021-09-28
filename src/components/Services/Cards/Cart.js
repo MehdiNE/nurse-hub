@@ -25,7 +25,7 @@ const Cart = (props) => {
             <div key={index} className={classes.list}>
               <p>{item.name}</p>
               <i
-                class="fas fa-times"
+                className={`fas fa-times ${classes["close-icon"]}`}
                 onClick={() => {
                   removeItem(item.id);
                 }}

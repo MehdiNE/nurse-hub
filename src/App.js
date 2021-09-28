@@ -1,24 +1,29 @@
 import React from "react";
 
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Services from "./components/Services/Services";
 import Login from "./components/Login/Login";
+import About from "./components/About/About";
 
 function App() {
   return (
     <div>
-      <Route path="/home">
-        <Home />
-      </Route>
-      <Route path="/services">
-        <Services />
-      </Route>
-      <Route path="/Sign-up">
-        <Login />
-      </Route>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/services">
+          <Services />
+        </Route>
+        <Route path="/Sign-up">
+          <Login />
+        </Route>
+        <Route path="/About">
+          <About />
+        </Route>
+      </Switch>
     </div>
   );
 }

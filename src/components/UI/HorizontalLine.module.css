@@ -1,0 +1,68 @@
+.h2-line-container {
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  margin-right: 7%;
+  margin-top: 2%;
+  color: white;
+}
+
+.h2-line {
+  position: relative;
+  margin-left: 20px;
+}
+
+.horizontal-line2 {
+  position: relative;
+  margin-top: 20px;
+  width: 70%;
+  height: 1px;
+  background-color: #565b6b;
+}
+
+@media only screen and (min-width: 0px) {
+  .h2-line {
+    font-size: 18px;
+    margin-top: 7px;
+  }
+
+  .horizontal-line2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .h2-line-container {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .h2-line {
+    font-size: 30px;
+    margin: 0 0 0 2rem;
+  }
+  .horizontal-line2 {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .h2-line {
+    font-size: 40px;
+    margin: -0.5rem 0 0 4rem;
+  }
+
+  .horizontal-line2 {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .h2-line-container {
+    margin-left: 10%;
+  }
+  .horizontal-line2 {
+    width: 70%;
+  }
+}

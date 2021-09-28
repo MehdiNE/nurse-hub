@@ -1,14 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  min-height: 100vh;
+  /* min-width: 100vw; */
+  /* background-repeat: no-repeat; */
+  background: linear-gradient(106.57deg, #373d53 0%, #252634 100%) !important;
+}
+
 @font-face {
-  font-family: "Vazir";
-  src: url("./Vazir-Regular.ttf");
-  src: url("./Vazir-Regular.ttf") format("ttf");
+  font-family: "BYekan", "vazir";
+  src: url("./Assets/fonts/BYekan.ttf") format("ttf");
+  src: url("./Assets/fonts/BYekan.woff") format("woff");
+  src: url("./Assets/fonts/Vazir-Regular.ttf") format("ttf");
+  src: url("./Assets/fonts/BYekan.woff2") format("woff2");
 
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font-family: "Vazir";
+  font-family: "vazir", "BYekan", Times, serif;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -18,10 +33,4 @@ ul {
 
 a:hover {
   color: aliceblue;
-}
-html {
-  min-height: 100vh;
-  /* min-width: 100vw; */
-  /* background-repeat: no-repeat; */
-  background: linear-gradient(106.57deg, #373d53 0%, #252634 100%) !important;
 }

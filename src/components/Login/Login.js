@@ -23,6 +23,10 @@ const Login = () => {
   return (
     <div className={classes.login}>
       <Navbar />
+      <div className={classes["h2-line-container"]}>
+        <div className={classes["horizontal-line2"]}></div>
+        <h2 className={classes["h2-line"]}>ورود یا ثبت نام</h2>
+      </div>
       <div className={classes.container}>
         <Card className={`${classes["inner-container"]} py-4`}>
           <form onSubmit={submitHandler}>

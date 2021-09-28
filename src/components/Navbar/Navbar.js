@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -18,36 +18,48 @@ function Navbar() {
         </div>
         <ul className={click ? "hnav-menu hactive" : "hnav-menu"}>
           <li className="hnav-item">
-            <Link to="/About" className="hnav-links" onClick={closeMobileMenu}>
+            <NavLink
+              activeClassName="active"
+              to="/About"
+              className="hnav-links"
+              onClick={closeMobileMenu}
+            >
               درباره
-            </Link>
+            </NavLink>
           </li>
 
           <li className="hnav-item">
-            <Link
+            <NavLink
+              activeClassName="active"
               to="/Services"
               className="hnav-links"
               onClick={closeMobileMenu}
             >
               خدمات
-            </Link>
+            </NavLink>
           </li>
           <li className="hnav-item">
-            <Link to="/home" className="hnav-links" onClick={closeMobileMenu}>
+            <NavLink
+              activeClassName="active"
+              to="/"
+              exact
+              className="hnav-links"
+              onClick={closeMobileMenu}
+            >
               صفحه اصلی
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/sign-up"
               className="hnav-links-mobile"
               onClick={closeMobileMenu}
             >
               Sign Up
-            </Link>
+            </NavLink>
           </li>
         </ul>
-        <Link to="/" className="hnavbar-logo" onClick={closeMobileMenu}>
+        <Link to="/" exact className="hnavbar-logo" onClick={closeMobileMenu}>
           Nurse
           <i class="fab fa-firstdraft" />
         </Link>

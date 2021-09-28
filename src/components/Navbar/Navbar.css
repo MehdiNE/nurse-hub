@@ -49,6 +49,10 @@
   border-radius: 30px;
   transition: all 0.2s ease-out;
 }
+.active {
+  background-color: rgba(99, 110, 114, 0.4);
+  border-radius: 30px;
+}
 
 .fa-bars {
   color: rgb(36, 34, 34);

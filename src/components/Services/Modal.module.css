@@ -1,0 +1,33 @@
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+  outline: none;
+  border: none;
+  background-color: rgba(99, 110, 114, 0.4);
+  border-radius: 30px;
+  color: white;
+}
+.total-number {
+  height: 30px;
+  width: 30px;
+  color: white;
+  background: linear-gradient(94.97deg, #ff0000 -130.13%, #c750ff 129.4%);
+  padding: 2px 2px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  font-size: 18px;
+}
+
+.modal-bg-color {
+  background-color: rgb(75, 79, 95);
+  color: white;
+}
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}

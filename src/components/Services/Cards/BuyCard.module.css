@@ -1,0 +1,106 @@
+.ser-card {
+  color: white;
+  border-radius: 40px;
+  height: 250px;
+  background-color: transparent;
+  border: 1px solid #4b4f5f;
+  margin: 1rem;
+  padding: 15px;
+  direction: rtl;
+}
+
+.ser-card h3 {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.ser-card p {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: right;
+  margin: 20px 0;
+  opacity: 0.5;
+}
+
+.card-icon1 {
+  color: white !important;
+  width: 20px;
+  height: 20px;
+}
+
+.ser-card button {
+  margin-right: 0.4rem;
+}
+
+.fa-check {
+  margin-left: 5px;
+}
+
+.selected {
+  border: 1px solid #ad0288;
+}
+
+.btn-card {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 10px;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid gray;
+  color: white;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.btn-card:before,
+.btn-card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(94.97deg, #ff0000 -130.13%, #c750ff 129.4%);
+  z-index: -1;
+  transform: translate3D(0, -100%, 0);
+  transition: all 0.5s;
+}
+
+.btn-card:before {
+  background: white;
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.btn-card:hover {
+  color: white;
+}
+
+.btn-card:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+.btn-card {
+  transform-style: preserve-3d;
+}
+
+.btn-card:before,
+.btn-card:after {
+  transform-origin: center center;
+  transform: scale(1, 0);
+}
+
+.btn-card:hover:before,
+.btn-card:hover:after {
+  transform: scale(1);
+  border-radius: 0;
+}

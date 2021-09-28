@@ -1,0 +1,36 @@
+.bg-input-color {
+  background-color: #5d6174;
+  color: white;
+}
+.horizontal-line {
+  position: relative;
+  /* width: 170px; */
+  height: 0.7px;
+  background-color: #565b6b;
+  left: 5%;
+  margin-left: -20px;
+}
+
+.enter:link {
+  color: #c750ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.enter:visited {
+  color: #c750ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.enter:hover {
+  color: #b11bf7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.enter:active {
+  color: rgb(255, 35, 218);
+  background-color: transparent;
+  text-decoration: underline;
+}

@@ -19,7 +19,8 @@ const BuyCard = (props) => {
       <div
         className={`${classes["ser-card"]} ${clicked ? classes.selected : ""}`}
       >
-        <i className={` fas fa-user-nurse  ${classes["card-icon"]} `}></i>
+        {/* <i className={` fas fa-user-nurse  ${classes["card-icon"]} `}></i> */}
+        <img src={props.icon} className={classes["card-icon1"]}></img>
         <h3>{props.name}</h3>
         <p>{props.description}</p>
         <button

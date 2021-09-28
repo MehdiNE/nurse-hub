@@ -1,6 +1,6 @@
 .cards {
   max-width: 55rem;
-  /* height: 500px; */
+  height: 300px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   /* margin: 0 auto; */
   display: grid;
@@ -17,7 +17,6 @@
 @media only screen and (min-width: 400px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
   }
 }
 
@@ -30,12 +29,11 @@
 @media only screen and (min-width: 992px) {
   .cards {
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
   }
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (max-width: 1250px) {
   .cards {
-    margin: 0 auto;
+    height: revert;
   }
 }
